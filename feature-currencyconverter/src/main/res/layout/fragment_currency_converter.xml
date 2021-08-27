@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etEnterCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/enter_the_value"
+            android:inputType="numberDecimal"
+            android:maxLength="30"
+            android:textColor="@color/cornflower_blue"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerTargetCurrency"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerInitialCurrency"
+            tools:ignore="Autofill,LabelFor" />
+
+
+        <TextView
+            android:id="@+id/tvConvertedSum"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:text="@string/dots"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerTargetCurrency"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/spinnerTargetCurrency"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerTargetCurrency" />
+
+        <Spinner
+            android:id="@+id/spinnerInitialCurrency"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/etEnterCurrency"
+            app:layout_constraintEnd_toEndOf="@+id/etEnterCurrency"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/etEnterCurrency"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Spinner
+            android:id="@+id/spinnerTargetCurrency"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvConvertedSum"
+            app:layout_constraintEnd_toEndOf="@+id/etEnterCurrency"
+            app:layout_constraintStart_toStartOf="@+id/etEnterCurrency"
+            app:layout_constraintTop_toBottomOf="@+id/etEnterCurrency" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@color/cornflower_blue"
+            android:gravity="center"
+            android:text="@string/calculate"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@color/cornflower_blue"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/etEnterCurrency"
+            app:layout_constraintEnd_toEndOf="@+id/etEnterCurrency"
+            app:layout_constraintStart_toStartOf="@+id/etEnterCurrency"
+            app:layout_constraintTop_toTopOf="@+id/etEnterCurrency" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

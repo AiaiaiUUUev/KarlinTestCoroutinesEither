@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currency"
+    app:startDestination="@id/currency_converter">
+
+    <fragment
+        android:id="@+id/currency_converter"
+        android:name="com.karlin.user.feature_currencyconverter.presentation.CurrencyConverterFragment"
+        android:label="CurrencyConverterFragment"
+        tools:layout="@layout/fragment_currency_converter" />
+</navigation>

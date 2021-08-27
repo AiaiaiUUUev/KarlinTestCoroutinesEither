@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AspectRatioImageView">
+        <attr name="aspectRatioValue" format="float" />
+        <attr name="dominantMeasurement" format="enum">
+            <enum name="width" value="0" />
+            <enum name="height" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CollapsingHeaderLayout">
+        <attr name="content" />
+        <attr name="contentScrim" />
+        <attr name="menu" />
+        <attr name="navigationIcon" />
+        <attr name="statusBarScrim" />
+        <attr name="title" />
+    </declare-styleable>
+</resources>

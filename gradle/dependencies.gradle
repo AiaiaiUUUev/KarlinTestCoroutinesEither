@@ -1,0 +1,43 @@
+
+ext {
+  //Android libraries
+  androidxVersion = '1.2.0'
+  archComponentsVersion = '2.2.0'
+  materialVersion = '1.2.1'
+  ktxVersion = '1.3.2'
+  constraintLayoutVersion = '2.0.4'
+  swipeRefreshVersion = '1.1.0'
+  archComponentVersion = '1.1.1'
+  glideVersion = '4.0.0'
+
+  //Third party libraries
+  coroutinesVersion = '1.4.2'
+  daggerVersion = '2.29.1'
+  flowBindingVersion = '1.0.0-beta02'
+  javaxAnnotationsVersion = '1.0'
+  javaxInjectVersion = '1'
+  okhttpVersion = "4.8.1"
+  okhttpLoggingInterceptorVersion = "4.8.1"
+  navComponentVersion = "2.3.2"
+  retrofit2Version = "2.9.0"
+  retrofit2ConverterGsonVersion = "2.7.1"
+  retrofit2AdapterVersion = "2.9.0"
+  roomVersion = "2.2.6"
+  rxjavaVersion = "2.2.19"
+  rxAndroidVersion = "2.1.1"
+  moshiVersion = "1.10.0"
+  timberVersion = "4.7.1"
+
+  //Unit Testing
+  junitVersion = '1.2.2'
+  junitExtVersion = '1.2.2'
+  mockitoVersion = '3.0.0'
+  kotlinMockitoVersion = '1.5.0'
+  mockkVersion = '1.10.0'
+
+  //Acceptance Testing
+  espressoVersion = '3.2.0'
+
+  //Development
+  leakCanaryVersion = '1.5'
+}
